@@ -1,59 +1,16 @@
-# Site settings
- title: Newsroom
- email: mustaphazeezat@example.com
- description: 
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-
- url: "https://newsroom.com" 
- timezone: Africa/Lagos
- language: en
-
-# Build settings
-markdown: kramdown
-
+---
+title: Newsroom
 timezone: Africa/Lagos
-language: en
-
-# Handling Reading
-charset: 'utf-8'
-
-# Build settings
-markdown: kramdown
-
-# Collections
 collections:
-  uploads:
-    title: uploads (Media & Files)
-  archives:
-    title: archives
+  posts:
+    title: Posts
     output: true
-    permalink: /:collection/:name/
-  topics:
-
-# Defaults
-defaults:
-  -scope:
-    type: archives
-  values:
-    layout: single-archive
-
-# Include folders
-include:
-  - _pages
-
-# Handling Sass
-sass:
-sass_dir: _sass
-style: compressed
-
-
-# exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  uploads:
+    title: Uploads
+    output: true
+email: mustaphazeezat@example.com
+description: Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
+url: https://newsroom.com
+language: en

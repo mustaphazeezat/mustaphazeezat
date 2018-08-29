@@ -1,10 +1,11 @@
 ---
-layout: single-archive
 title: Apple announces multi-year partnership with oprah winfrey
+date: 2018-08-04 00:00:00 +01:00
+layout: single-archive
 topic: photo
 post-image: https://res.cloudinary.com/azeezat/image/upload/v1535453743/newsroom/bg3.jpg
-date: 2018-08-04
-excerpt: It is a long established fact that a reader will be distracted by the readable content             of a page when looking at its layout.
+excerpt: It is a long established fact that a reader will be distracted by the readable
+  content             of a page when looking at its layout.
 ---
 
 <figure>

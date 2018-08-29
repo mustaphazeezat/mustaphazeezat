@@ -1,12 +1,14 @@
 ---
-layout: single-archive
 title: Apple Piaza Liberty now open in Milan
+date: 2018-02-04 00:00:00 +01:00
+layout: single-archive
 topic: press release
 post-image: https://res.cloudinary.com/azeezat/image/upload/v1535452789/newsroom/apple-piazza-liberty1.jpg
-date: 2018-02-04
-excerpt: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+excerpt: It is a long established fact that a reader will be distracted by the readable
+  content of a page when looking at its layout.
 summary: Contrary to popular belief, Lorem Ipsum is not simply random text.
 ---
+
 <!-- summary -->
 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
 

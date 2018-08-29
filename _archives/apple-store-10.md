@@ -1,10 +1,11 @@
 ---
-layout: single-archive
 title: Apple Store turns 10
+date: 2018-03-04 00:00:00 +01:00
+layout: single-archive
 topic: features
 post-image: https://res.cloudinary.com/azeezat/image/upload/v1535453216/newsroom/bg5.jpg
-date: 2018-03-04
-excerpt: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+excerpt: It is a long established fact that a reader will be distracted by the readable
+  content of a page when looking at its layout.
 summary: Contrary to popular belief, Lorem Ipsum is not simply random text.
 ---
 

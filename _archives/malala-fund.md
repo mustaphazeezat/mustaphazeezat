@@ -1,11 +1,13 @@
 ---
-layout: single-archive
 title: Apple Support Malala Fund expansion in Latin America
+date: 2018-08-04 00:00:00 +01:00
+layout: single-archive
 topic: photo
 post-image: https://res.cloudinary.com/azeezat/image/upload/v1535453216/newsroom/bg5.jpg
-date: 2018-08-04
-excerpt: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+excerpt: It is a long established fact that a reader will be distracted by the readable
+  content of a page when looking at its layout.
 ---
+
 <figure>
         <img src="https://res.cloudinary.com/azeezat/image/upload/v1535465976/apple-piazza-liberty4.jpg" alt="image-title-here">
                 <div>
