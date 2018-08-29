@@ -1,0 +1,169 @@
+// 
+    // Home Page
+
+    // @package sfc
+    // @author  Kabolobari Benakole <kb@softcom.ng>
+
+.is-home
+    position:                   relative
+    .posts-container
+        position:               relative
+        @media #{ $smallup }
+            width:              $maxwidth
+            margin:             auto
+        @media #{ $mediumup }
+            width:              $maxwidth-tb
+        @media #{ $slaptop }
+            width:              980px
+
+    .grid-cards
+        position:               relative
+        @media #{ $xsmallup }
+            padding:            2em 
+        @media #{ $mediumup }
+            padding:            0
+            transition:         all .5s ease-in-out
+        
+        .post-image
+            position:           relative
+            height:             270px
+            @media #{ $smallup }
+                height:         203px
+            @media #{ $mediumup }
+                height:         235px
+            @media #{ $largeup }
+                height:         316px
+            img 
+                width:          100%
+                height:         100%
+        
+        .post-summary
+            position:           absolute
+            width:              calc( 100% - 4em )
+            font-size:          1.1rem
+            color:              #666666
+            line-height:        18px
+            bottom:             -2.3em
+            display:            none
+            @media #{ $largeup }
+                bottom:         -2.6em
+
+
+        .post-title
+            margin-bottom:       2rem
+            color:               #000000
+            @media #{ $xsmallup }
+                font-size:       17px
+            @media #{ $mediumup }
+                font-size:       19px
+            @media #{ $largeup }
+                font-size:      21px
+
+        .post-date
+            font-size:          12px
+            font-weight:        400px
+            color:              #666666
+
+        .card-details
+            position:           relative
+            background-color:   #ffffff
+            @media #{ $mediumup }
+                min-height:     150px
+                transition:     transform .4s ease-in-out
+        @media #{ $mediumup }
+            &:first-child, &:last-child
+                height:         230px
+                @media #{ $slaptop }
+                    height:         345px
+                .post-image
+                    position:       relative
+                    background:     $platinum url("/uploads/apple.svg") no-repeat center
+                    background-size: 50%
+                    width:          65%
+                    height:         100%
+                    float:          left
+                    @media #{ $largeup }
+                        width:      60%
+                    @media #{ $slaptop }
+                        width:      65%
+                    img
+                        display:    none
+                .card-details
+                    position:       relative
+                    width:          35%
+                    height:         100%
+                    float:          left
+                    padding-top:    $space-md
+                    padding-bottom: $space-sm
+                    @media #{ $largeup }
+                        width:      40%
+                    @media #{ $slaptop }
+                        width:      35%
+                        padding:    $space-lg * 1.5 $space-md
+                    .post-date
+                        position:   relative
+                        margin:     0
+                        top:        5em
+                        @media #{ $largeup }
+                            top:    3em
+                            font-size: 15px
+                        @media #{ $slaptop }
+                            top:    6em
+
+                    .post-title
+                        @media #{ $xsmallup }
+                            font-size: 17px
+                        @media #{ $mediumup }
+                            font-size: 19px
+                        @media #{ $largeup }
+                            font-size: 24px
+
+                    .post-summary
+                        display:    block
+                        margin-top: 0
+                        top:        9em
+                        color:      #000000
+                        @media #{ $largeup }
+                            top:    9.5em
+                        @media #{ $slaptop }
+                            top:    12em
+                            font-size: 17px
+                            line-height: 25px
+        &:first-child:hover, &:last-child:hover
+            transform:          scaleX(1.01)
+            .post-image
+                background-color: $gainsboro
+            .card-details
+                transform:       none
+                z-index:        1
+                    
+    @media #{ $mediumup }
+        .grid-cards:hover
+            color:              none
+            box-shadow:         $brashboxshadow
+            .card-details
+                transform:      translateY(-45px)
+                z-index:        2
+            .post-summary
+                display:        block
+
+    .home-archive-link
+        position:               absolute
+        padding:                1em 0
+        bottom:                 -4em
+        left:                   0
+        width:                  100%
+        font-size:              17px
+        a
+            display:            block
+            color:              #0070c9
+        @media #{ $mediumup }
+            font-size:          $mediumfont
+            bottom:             -3em
+
+    .home-archive-link:hover
+        a
+            color:              #0070c9 !important
+            text-decoration:    underline !important
+            text-decoration-color: #0070c9 !important
+            

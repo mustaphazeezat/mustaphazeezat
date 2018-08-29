@@ -1,0 +1,72 @@
+// 
+    // Wrappers for all Layouts
+
+    // @package sfc
+    // @author  Kabolobari Benakole <i@kb.life>
+
+
+.boxing
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    -o-box-sizing: border-box
+    box-sizing: border-box
+
+.wrapper
+    padding:                    $space-sm $space
+    &.will-grow
+        @media #{ $mediumup }
+            padding-top:        $space-md
+            padding-bottom:     $space-md
+        @media #{ $largeup }
+            padding-top:        $space-lg
+            padding-bottom:     $space-lg
+        @media #{ $xlargeup }
+            padding-top:        $space-xl
+            padding-bottom:     $space-xl
+    &.negate-top
+        padding-top:            0!important
+    &.negate-bottom
+        padding-bottom:         0!important
+    &.negate-x
+        padding-right:          0!important
+        padding-left:           0!important
+    &.negate-top-slaptopup
+        @media #{ $slaptop }
+            padding-top:        0!important
+    &.negate-top-largeup
+        @media #{ $largeup }
+            padding-top:        0!important
+    &.negate-bottom-smallup
+        @media #{ $smallup }
+            padding-bottom:     0!important
+
+.wrapper-y
+    padding-top:        $space
+    padding-bottom:     $space
+    box-sizing: border-box  
+    &.will-grow
+        @media #{ $mediumup }
+            padding-top:        $space-md
+            padding-bottom:     $space-md
+        @media #{ $largeup }
+            padding-top:        $space-lg
+            padding-bottom:     $space-lg
+        @media #{ $xlargeup }
+            padding-top:        $space-xl
+            padding-bottom:     $space-xl
+    &.negate-top
+        padding-top:            0!important
+    &.negate-bottom
+        padding-bottom:         0!important
+        
+.wrapper-x
+    padding-right:      $space
+    padding-left:       $space
+    @media #{ $slaptop }
+        padding-right:      $space-md
+        padding-left:       $space-md
+    @media #{ $xlargeup }
+        padding-right:      ($space-xl * 3.35)
+        padding-left:       ($space-xl * 3.35)
+
+

@@ -1,0 +1,59 @@
+.drop-down-menu
+    
+    .trigger:checked ~ .hamburger
+
+        .bar1 
+            transform:          rotate(45deg)   
+            
+        .bar2
+            transform:          rotate(-45deg)
+            transform-origin:   left
+            bottom:             1px
+            left:               2px
+            
+    .trigger:checked ~ nav
+        opacity:                 1
+        pointer-events:          auto    
+    
+    .trigger
+        display: none
+
+    .hamburger
+        position:                       relative
+        width:                          48px
+        height:                         48px
+        top:                            1em    
+        cursor:                         pointer
+        
+        .bars
+            position:                   relative
+            width:                      17px
+            height:                     1px
+            margin-top:                 6px
+            z-index:                    3
+            -webkit-transition:         all 0.318s ease-out
+            -moz-transition:            all 0.318s ease-out
+            -o-transition:              all 0.318s ease-out
+            transition:                 all 0.318s ease-out
+
+    nav
+        position:                       absolute
+        width:                          100%
+        height:                         100vh
+        left:                           0
+        top:                            48px
+        padding:                        80px  48px
+        background-color:               #333
+        opacity:                        0
+        pointer-events:                 none
+        z-index:                        2
+        cursor:                         pointer
+        -webkit-transition:             all 0.5s ease-out
+        -moz-transition:                all 0.5s ease-out
+        -o-transition:                  all 0.5s ease-out
+        transition:                     all 0.5s ease-out
+
+        ul > li
+            padding:                    $space-xxs 0
+            font-size:                  $mediumfont
+            border-bottom:              1px solid #888

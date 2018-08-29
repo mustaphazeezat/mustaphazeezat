@@ -1,0 +1,161 @@
+// 
+    // Navigations
+
+    // @package sfc
+    // @author  Kabolobari Benakole <i@kb.life>
+
+.desktopnav
+    width: calc(100% - 48px - 4em)
+    @media #{ $largeup }
+        width: calc(100% - 48px - 7em)
+
+    ul
+        display: flex
+        justify-content: space-between
+        
+        li
+            a
+                display: block
+                padding: .8em 0
+                font-size: 14px
+                color: #ffffff
+        
+
+.newsroom-search-small
+    z-index: 4
+    @media #{ $mediumup }
+        display: none
+
+
+
+.newsroom-search-big
+    @media #{ $xsmallup }
+        display: none
+
+    @media #{ $mediumup }
+        display: block
+
+.newsroom-nav
+    height: 48px
+    box-sizing: border-box
+    @media #{ $xsmallup }
+        font-size: 19px
+    @media #{ $mediumup }
+        font-size: 24px
+    @media #{ $largeup }
+        font-size: 24px
+    
+.newsroom-title:hover
+    a
+        color: #000000 !important
+
+
+.search-container
+    position: relative
+    @media #{ $xsmallup }
+        display: none
+    @media #{ $mediumup }
+        display: block
+        display: flex
+        justify-content: space-between
+.search-container.active
+    @media #{ $xsmallup }
+        display: block
+        position: absolute
+        background: #ffffff
+        padding: $space-md
+        left: 0%
+        width: 100%
+        height: 23vh
+        
+.toggles
+    position: absolute
+    width: 100%
+    left: 0
+    padding: 2em
+    top: 44px
+    background-color: #ffffff
+    p
+        width: 100%
+        position: relative
+        margin-bottom: .5em
+        border-bottom: 1px solid #333333
+        opacity: .7
+
+    input
+        position: relative
+        width: calc( 100% - 25px )
+        background: transperant
+        border: none
+        outline: none
+        font-size: 17px
+        margin-left: 5px
+        
+
+    svg
+        width: 15px
+        height: 15px  
+        fill: #333
+
+    a
+        color: #333333
+        opacity: .7
+        font-size: 20px
+        font-weight: 400
+
+.uk-button-default
+    border: none 
+
+.no-p
+    padding-left: 0
+    padding-right: 0
+
+.search
+    position: relative
+    padding-top: 1em
+    margin-right: 30px
+    @media #{ $mediumup }
+        width: 200px
+
+        input
+            outline: none !important
+            border: none !important
+            &:hover
+            border-bottom: #333333 !important
+
+        svg
+            fill: #333333
+            margin-right: 10px
+
+@media #{ $mediumup }
+    .search.active
+        opacity: 1
+        pointer-events: auto
+    
+// .newsroom-search-btn
+//     position: relative
+//     background: transparent
+//     color: #333333
+//     font-size:  $smallfont
+//     left: 25px
+//     outline: none
+//     z-index: 1
+//     @media #{ $mediumup }
+//         font-size:  0.8rem
+//         left: 200px 
+//         opacity: .7 
+//         top: -5px
+.newsroom-search-btn:hover
+    color: #0070c9 !important
+.archive-link
+    position: relative
+    display: block
+    top: -35px
+    font-size: $smallfont
+    @media #{ $mediumup }
+        top: 0
+        padding-top: 1.2em
+        font-size: 0.8rem
+        opacity: .7
+.archive-link:hover
+    color: #0070c9 !important

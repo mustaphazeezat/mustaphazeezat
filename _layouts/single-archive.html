@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<article class="wrapper-x wrapper-y is-archive-single">
+    <div class="posts-container">
+        <div class="post-info border-bottom">
+                {% assign item = site.topics | where: 'topic', archive.topic | first %}
+                {% if item  %}
+                    {% assign color = nil %}
+                    {% case item.topic %}
+                        {% when 'photo' %}
+                            {% assign color = '#10c1e1' %}
+                        {% when 'update' %}
+                            {% assign color = '#919bfe' %}
+                        {% when 'press release' %}
+                            {% assign color = '#ff2d55' %}
+                        {% when 'features' %}
+                            {% assign color = '#ced257' %}
+                    {% endcase %}
+                <span style = " color: {{ color }} " class="post-tag pico-caps fw-medium my-0">{{ item.topic }}</span>
+                {% endif %}
+            <p class=" co-text my-0 fw-medium">{{ page.date | date: '%B %d, %Y' }}</p>
+            <h1 class="co-head single-post-title"> {{ page.title }}</h1>
+            <div class="">
+                <h2 class="sr">list of social media links</h2>
+                <ul class=" social-media-links d-flx none ">
+                    <li class="link"><a href="" class="pl-1">{% include icons.html icon= "facebook" %}</a></li>
+                    <li class="link"><a href="" class="pl-1">{% include icons.html icon= "twitter" %}</a></li>
+                    <!-- <li class="link"><a href="" class="pl-1">{% include icons.html icon= "message" %}</a></li> -->
+                    <li class="link"><a href="" class="pl-1">{% include icons.html icon= "link" %}</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="microtext co-text post-content">
+            <p class="co-text microtext">{{ page.summary }}</p>
+            <div>{{content}}</div>
+        </div>
+    </div>
+</article>

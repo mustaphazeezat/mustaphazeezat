@@ -1,0 +1,18 @@
+
+<div class="breadcrumbs ff-sans-serif pb-h d-ifx al-i-c">
+        {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+        <a href="{{ site.url }}/" class="opacity-7-link">
+            {% include icons.html icon = "main-logo" %}
+        </a>
+        {% for crumb in crumbs offset: 1 %}
+            {% if forloop.last %}
+            /
+            {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+            {% else %}
+            /
+            <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}" class="opacity-7-link">
+                {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+            </a>
+            {% endif %}
+        {% endfor %}
+    </div>

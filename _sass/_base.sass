@@ -1,0 +1,63 @@
+// 
+    // Base
+
+    // @package sfc
+    // @author  Kabolobari Benakole <i@kb.life>
+
+html
+    font-size:              $basefont
+
+*, *::before, *::after
+    box-sizing:             border-box
+
+body
+    margin:                 0
+    font-family:            $bodyfont
+    font-weight:            $normal
+    line-height:            $defaultlh
+    display:                flex
+    flex-direction:         column
+    background-color:       #f2f2f2
+    height:                 100vh
+    main
+        flex:               1
+
+p
+    margin:                 0
+    margin-top:             $space-sm
+    margin-bottom:          $space-sm
+    font-size:              $microfont
+    color:                  #333333
+    font-weight:            $normal
+    &:last-of-type:not(:only-of-type)
+        margin-bottom:      0
+
+a
+    text-decoration:        none !important
+    color:                  $primarycolor
+    transition:             color 0.32s ease-out
+    font-family:            $headingfont
+    &:focus, &:hover
+        text-decoration:    none !important
+        // color:              $linkcolor !important
+
+audio, canvas, img, video
+    display:                block
+    vertical-align:         middle
+
+svg
+    width: 15px
+    height: 15px
+
+img
+    width:                  100%
+    object-fit:             cover
+    
+ul.none
+    padding:                0
+    margin:                 0
+    list-style:             none
+
+button
+    border:                 none
+    cursor:                 pointer

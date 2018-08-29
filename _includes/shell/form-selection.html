@@ -1,0 +1,103 @@
+<section action="" id="filter" class="py-15 wrapper-x my-0 boxing">
+    <h3 class="sr">Posts filter</h3>
+    <section class="hide-mediumup d-flx  al-i-b">
+        <button class="uk-button uk-button-default uk-margin-small-right no-p " type="button" uk-toggle="target: #modal-close-default">
+            {% include icons.html icon="dotted-menu" %}
+        </button>
+        <div id="modal-close-default" uk-modal class="no-p-a">
+            <div class="uk-modal-dialog uk-modal-body width-100">
+                <div class="border-bottom py-h">
+                    <button class="uk-modal-close-default icon-right" type="button" uk-close></button>
+                </div>
+                <ul uk-accordion>
+                    <li class="">
+                        <a class="uk-accordion-title nanotext fw-medium py-1 border-bottom" href="#">All Topics</a>
+                        <ul class="none picotext uk-accordion-content">
+                            <li class="py-h px-1">Mac</li>
+                            <li class="py-h px-1">iPad</li>
+                            <li class="py-h px-1">iphone</li>
+                            <li class="py-h px-1">iOS</li>
+                            <li class="py-h px-1">Watch</li>
+                            <li class="py-h px-1">TV</li>
+                        </ul>
+                
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title nanotext fw-medium py-1 border-bottom" href="#">All Years</a>
+                        <ul class="none picotext uk-accordion-content pos-rel">
+                            <li class="py-h px-1">2018</li>
+                            <li class="py-h px-1">2017</li>
+                            <li class="py-h px-1">2016</li>
+                            <li class="py-h px-1">2015</li>
+                            <li class="py-h px-1">2014</li>
+                            <li class="py-h px-1">2013</li>
+                        </ul>
+                    
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title nanotext fw-medium py-1 border-bottom" href="#">All Months</a>
+                        <ul class="none picotext uk-accordion-content">
+                            <li class="py-h px-1">January</li>
+                            <li class="py-h px-1">february</li>
+                            <li class="py-h px-1">March</li>
+                            <li class="py-h px-1">April</li>
+                            <li class="py-h px-1">May</li>
+                            <li class="py-h px-1">June</li>
+                            <li class="py-h px-1">July</li>
+                            <li class="py-h px-1">August</li>
+                            <li class="py-h px-1">September</li>
+                            <li class="py-h px-1">October</li>
+                            <li class="py-h px-1">November</li>
+                            <li class="py-h px-1">December</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <label for="" class="filter">Filter</label>
+    </section>
+    <section class="d-flx  al-i-b show-mediumup">
+        <label for="filter" class="filter">Filter:</label>
+        <ul class="none my-0">
+            <li class="uk-inline topics">
+                <button class="uk-button uk-button-l uk-button-default nanotext" type="button">All Topics</button>
+                <ul uk-dropdown="mode: click" class="none">
+                    <li class="py-h px-1">Mac</li>
+                    <li class="py-h px-1">iPad</li>
+                    <li class="py-h px-1">iphone</li>
+                    <li class="py-h px-1">iOS</li>
+                    <li class="py-h px-1">Watch</li>
+                    <li class="py-h px-1">TV</li>
+                </ul>
+            </li>
+            <li class="uk-inline years ">
+                <button class="uk-button uk-button-l uk-button-default nanotext" type="button">All Years</button>
+                <ul uk-dropdown="mode: click" class="none">
+                    <li class="py-h px-1">2018</li>
+                    <li class="py-h px-1">2017</li>
+                    <li class="py-h px-1">2016</li>
+                    <li class="py-h px-1">2015</li>
+                    <li class="py-h px-1">2014</li>
+                    <li class="py-h px-1">2013</li>
+                </ul>
+            </li>
+            <li class="uk-inline months">
+                <button class="uk-button uk-button-l uk-button-default nanotext" type="button">All Topics</button>
+                <ul uk-dropdown="mode: click" class="none">
+                    <li class="py-h px-1">January</li>
+                    <li class="py-h px-1">february</li>
+                    <li class="py-h px-1">March</li>
+                    <li class="py-h px-1">April</li>
+                    <li class="py-h px-1">May</li>
+                    <li class="py-h px-1">June</li>
+                    <li class="py-h px-1">July</li>
+                    <li class="py-h px-1">August</li>
+                    <li class="py-h px-1">September</li>
+                    <li class="py-h px-1">October</li>
+                    <li class="py-h px-1">November</li>
+                    <li class="py-h px-1">December</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</section>

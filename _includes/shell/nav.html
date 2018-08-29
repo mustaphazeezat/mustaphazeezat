@@ -1,0 +1,7 @@
+<nav aria-label="Site-navigation">
+    <ul class="none">
+        {% for item in site.data.nav.headernav %}
+        <li class=""><a class="richblack-link nanotext fw-medium" href="{{item.slug | prepend: site.baseurl }}">{{item.page}}</a></li>
+        {% endfor %}
+    </ul>
+</nav>

@@ -1,0 +1,45 @@
+<nav aria-label="newsroom-navigation" class=" bg-white wrapper-x pos-rel newsroom-nav">
+    <h3 class="sr">Newsroom Navigation</h3>
+    <ul class="none d-flx j-c-sb">
+        <li class="newsroom-title pt-h pb-h boxing">
+            <a href="{{site.url}}" class="fw-medium">{{site.title}}</a>
+        </li>
+        <li class="newsroom-search-small">
+                <button class="uk-button uk-button-default uk-margin-small-right no-p" type="button" uk-toggle="target: #modal-close-default">{% include icons.html icon = 'arrow-up' %}</button>
+
+                <!-- This is the modal with the default close button -->
+                <div id="modal-close-default" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body class="toggles">
+                        <p >{% include icons.html icon = 'Search' %}<input type="search" placeholder="Search here"></p>
+                        <a href="/archive/" class="">Archive</a>
+                    </div>
+                </div>
+                
+
+                <!-- <div class="uk-inline ">
+                    <button class="uk-button uk-button-default no-p" type="button">{% include icons.html icon = 'arrow-up' %}</button>
+                    <div uk-dropdown="mode: click" class="toggles">
+                        <p >{% include icons.html icon = 'Search' %}<input type="search" placeholder="Search here"></p>
+                        <a href="/archive/" class="">Archive</a>
+                    </div>
+                </div> -->
+            <!-- <button class="uk-button no-p uk-button-default" type="button" uk-toggle="target: #toggle-usage">
+                {% include icons.html icon = 'arrow-up' %}
+            </button>
+            <div id="toggle-usage" class="toggles"> 
+                <p >{% include icons.html icon = 'Search' %}<input type="search"></p>
+                <a href="/archive/" class="">Archive</a>
+            </div> -->
+        </li>
+        <li class="newsroom-search-big  ">
+            <div class="search-container">
+                <!-- <button class="newsroom-search-btn fw-normal picotext" aria-label="open search form">Search Newsroom</button> -->
+                <p class="search d-flx j-c-sb my-0">
+                    {% include icons.html icon = 'Search' %}
+                    <input type="search" class="" placeholder="Search">
+                </p> 
+                <a href="/archives/" class="archive-link fw-normal picotext">Archive</a>
+            </div>
+        </li>
+    </ul>
+</nav>

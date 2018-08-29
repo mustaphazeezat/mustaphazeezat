@@ -1,0 +1,20 @@
+# Main Navigation
+headernav: 
+  - page: Mac
+    slug: /
+  - page: iPad
+    slug: /ipad/
+  - page: iPhone
+    slug: /iphone/
+  - page: Music
+    slug: /music/ 
+  - page: Support
+    slug: /support/
+  - page: Where to Buy
+    slug: /where-to-buy/
+
+subnav: 
+  
+
+footernav:
+  

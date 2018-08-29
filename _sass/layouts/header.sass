@@ -1,0 +1,48 @@
+// 
+    // Global Header
+
+    // @package sfc
+    // @author  Kabolobari Benakole <i@kb.life>
+
+.main-header
+    position:                   relative
+    height:                     48px
+    box-sizing:                 border-box
+    @media #{ $mediumup }
+        height:                 44px
+
+    .navigation
+        display: flex
+        // justify-content:        flex-start
+        @media #{ $mediumup }
+            justify-content:    space-between    
+
+    .mobilenav
+        @media #{ $mediumup }
+            display:            none
+        
+
+    .desktopnav
+        @media #{ $xsmallup }
+            display:            none
+        @media #{ $mediumup }
+            display:            block
+    
+    .main-logo
+        position:               relative
+        width:                  48px
+        height:                 48px
+        left:                   50%
+        top:                    0
+        margin-left:            -48px
+        svg
+            width:              50px
+            height:             48px
+            fill:               #ffffff
+            z-index:            3
+        @media #{ $mediumup }
+            left:               0
+            margin-left:        -18px
+        &:hover
+            svg
+                fill:           #f2f2f2

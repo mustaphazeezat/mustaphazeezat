@@ -1,0 +1,166 @@
+// 
+    // Single Pages (Posts & Pages)
+
+    // @package sfc
+    // @author  Kabolobari Benakole <kb@softcom.ng>
+
+
+.is-archive-single
+    position:                           relative
+    
+    .post-info
+        position:                       relative
+        width:                          90%
+        margin:                         0 auto
+        padding:                        3em 0
+        @media #{ $mediumup }
+            width:                      570px
+        p
+            position:                   relative
+            line-height :               14px
+            font-size:                  1rem
+            text-transform:             uppercase
+    .single-post-title
+        position:                       relative
+        font-size:                      31px
+        font-weight:                    600
+        line-height:                    3rem
+        @media #{ $mediumup }
+            font-size:                  48px
+            line-height:                4.5rem
+    .social-media-links
+        position:                       relative 
+        margin-top:                     2em
+        @media #{ $mediumup }
+            margin-top:                 3em
+        .link
+            position:                   relative 
+            a
+                display:                block
+                
+                svg
+                    fill:               #888888
+                    width:              17px
+                    height:             17px
+                    transition:         fill .5s ease-in-out
+                    @media #{ $mediumup }
+                        width:          17px
+                        height:         20px
+            a:hover
+                svg
+                    fill:               #4c9bd9  
+        
+    .post-content
+        position:                       relative
+        color:                          #333333
+
+        p, blockquote
+            position:                   relative
+            width:                      90%
+            margin-left:                auto
+            margin-right:               auto
+            @media #{ $mediumup }
+                width:                  570px
+
+        blockquote:before,
+        blockquote:after
+            font-size:                  17px
+
+
+        blockquote:before
+            content:                    '\275D'
+
+        blockquote:after
+            content:                    '\275E'
+            
+
+        figure
+            position:                   relative
+            margin:                     $space-lg 0
+            transition:                 all .5s ease-in-out
+            div 
+                position:               absolute
+                width:                  100%
+                bottom:                 2.6em
+                background-color:       #333333
+                padding:                1em 2em
+                display:                none
+                
+                ul
+                    display:            flex
+                    list-style:         none 
+                    margin-bottom:      0
+                    padding:            0
+
+                    li
+                        margin-right:   1em
+
+                        a 
+                            display:    block
+                            svg
+                                fill:   #ffffff
+                                transition:     all .5s ease-in-out
+                        &:hover
+                            svg
+                                fill:   #0070c9
+        img
+            position:                   relative
+            width:                      100%
+            object-fit:                 fill  
+            transition:                 box-shadow .5s ease-in-out
+            @media #{ $xsmallup }
+                height:      300px
+            @media #{ $smallup }
+                height:      350px
+            @media #{ $mediumup }
+                height:      400px
+            @media #{ $largeup }
+                height:     550px
+    @media #{ $mediumup }
+        figure:hover
+            img
+                box-shadow:             $brashboxshadow1
+
+            div
+                display:                block
+           
+
+               
+            
+    figcaption
+        font-size: 1rem
+        color:  #333333
+        opacity: .9
+        position: relative
+        width: 90%
+        margin-top: .4em
+        margin-left: auto
+        margin-right: auto
+        @media #{ $mediumup }
+            width: 570px
+
+    .newsroom-media
+        position: relative
+        background-color: #333333
+        padding: 5em 15em
+        
+        .newsroom-media-title
+            outline: 1px solid white
+
+        .media-title
+            position: relative
+            font-size: 5.14rem
+            margin-top: -30px
+        svg
+            width: 100px
+            height: 100px
+            fill: #ffffff
+            margin-left: -33px
+        a
+            .arrow-svg
+                width: 20px
+                height: 20px
+                svg
+                    width: 10px
+                    height: 15px
+                    fill: blue 

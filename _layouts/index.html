@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<section class="is-home bg-apple wrapper-x">
+    <h2 class="sr">collection of posts</h2>
+    <div class="posts-container wrapper-y will-grow">
+        <ul class="none striped-grid cards-container">
+        {% for archive in site.archives reversed %}
+            <li class="bg-white grid-cards">
+                <a href= "{{ archive.url | prepend: site.url }}" >
+                    <div class="post-image"><img src="{{ archive.post-image }}" alt="" width="200px" height="200px"></div>
+                    <div class="p-1s card-details pos-rel">
+                        {% assign item = site.topics | where: 'topic', archive.topic | first %}
+                        {% if item  %}
+                            {% assign color = nil %}
+                            {% case item.topic %}
+                                {% when 'photo' %}
+                                    {% assign color = '#10c1e1' %}
+                                {% when 'update' %}
+                                    {% assign color = '#919bfe' %}
+                                {% when 'press release' %}
+                                    {% assign color = '#ff2d55' %}
+                                {% when 'features' %}
+                                    {% assign color = '#ced257' %}
+                            {% endcase %}
+                        <span style=" color: {{color}} " class="post-tag pico-caps my-0">{{ item.topic }}</span>
+                        {% endif %}
+                        <h3 class="my-0 fw-medium post-title">{{archive.title | truncatewords: 8, '' }}</h3>
+                        <p class=" post-date my-0  pos-abs-b">{{ archive.date | date: '%B %d, %Y' }}</p>
+                        <p class="my-h post-summary">{{archive.excerpt | truncate: 90, '...' }}</p>
+                    </div>
+                </a>
+            </li>
+        {% endfor %} 
+        </ul>
+    </div>
+    <div class=" home-archive-link bg-white tx-c fw-medium  pb-1h"><a href="/archives/">View Archive</a></div>
+</section>
