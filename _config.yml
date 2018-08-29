@@ -1,0 +1,59 @@
+# Site settings
+title: Newsroom
+email: mustaphazeezat@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://newsroom.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+
+timezone: Africa/Lagos
+language: en
+
+# Handling Reading
+charset: 'utf-8'
+
+# Build settings
+markdown: kramdown
+
+# Collections
+collections:
+  uploads:
+    title: uploads (Media & Files)
+  archives:
+    title: archives
+    output: true
+    permalink: /:collection/:name/
+  topics:
+
+# Defaults
+defaults:
+  -scope:
+    type: archives
+  values:
+    layout: single-archive
+
+# Include folders
+include:
+  - _pages
+
+# Handling Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
