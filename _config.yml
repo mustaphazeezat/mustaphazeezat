@@ -1,12 +1,14 @@
 # Site settings
-title: Newsroom
-email: mustaphazeezat@example.com
-description: >- # this means to ignore newlines until "baseurl:"
+ title: Newsroom
+ email: mustaphazeezat@example.com
+ description: 
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://newsroom.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+ url: "https://newsroom.com" 
+ timezone: Africa/Lagos
+ language: en
 
 # Build settings
 markdown: kramdown
@@ -43,10 +45,10 @@ include:
 
 # Handling Sass
 sass:
-  sass_dir: _sass
-  style: compressed
+sass_dir: _sass
+style: compressed
 
-  
+
 # exclude:
   - Gemfile
   - Gemfile.lock
