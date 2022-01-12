@@ -1,7 +1,7 @@
-- 👋 Hi, I’m @mustaphazeezat
+- 👋 Hi, I’m Mustapha azeezat
 - 👀 I’m interested in web Frontend and website development
-- 🌱 I’m currently working with react, redux, contextApi, css animation, gsap 
-- 💞️ I’m looking to collaborate on different web projects
+- 🌱 I currently working with react js, Next js, strapi,firebase, REST API, Redux, ContextApi, CSS animation and Gsap 
+- 💞️ I’m looking to collaborate on different personal web and open source projects
 - 📫 You can reach me via e-mail mustaphazeezat@gmail.com
 
 <!---
