@@ -1,7 +1,7 @@
-- 👋 Hi, I’m Mustapha azeezat
-- 👀 I’m interested in web Frontend and website development
-- 🌱 I currently work with React js, Next js, strapi, firebase, REST API, Redux, ContextApi, Wordpress, CSS animation and Gsap 
-- 💞️ I’m looking to collaborate on different personal web and open source projects
+- 👋 Hi, I’m Azeezat Mustapha
+- 👀 I’m interested in Data Science, Machine learning, web Frontend and website development projects
+- 🌱 I currently work with R, Python, Javascript, Reactjs, Nextjs, REST API, WordPress, CSS animation and Gsap 
+- 💞️ I’m looking to collaborate on different Data science projects, personal web and open-source projects
 - 📫 You can reach me via e-mail mustaphazeezat@gmail.com
 
 <!---
