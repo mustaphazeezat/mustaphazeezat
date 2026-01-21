@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Azeezat Mustapha
-- 👀 I’m interested in Data Science, Machine learning, web Frontend and website development projects
-- 🌱 I currently work with R, Python, Javascript, Reactjs, Nextjs, REST API, WordPress, CSS animation and Gsap 
+- 👀 I’m interested in Data Science, frontend and Fullstack projects
+- 🌱 I currently work with R, Python, Javascript, Reactjs, Nextjs, WordPress, CSS animation and GSAP 
 - 💞️ I’m looking to collaborate on different Website development, Data science projects, personal web and open-source projects
 - 📫 You can reach me via e-mail mustaphazeezat@gmail.com
 
